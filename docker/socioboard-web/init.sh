@@ -29,4 +29,4 @@ sed -i "s;<<NOTIFICATION NODE SERVICE>>;https://socio-notifications.${BASE_DOMAI
 # start frontend
 echo "Setting Laravel Key"
 cd /usr/socioboard/app/socioboard-web-php
-echo -e "yes\n" | php8 artisan key:generate
+echo -e "yes\n" | php81 artisan key:generate

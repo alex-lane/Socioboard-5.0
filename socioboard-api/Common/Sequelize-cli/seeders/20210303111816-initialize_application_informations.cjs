@@ -38,7 +38,8 @@ module.exports = {
         board_me: false,
         share_library: false,
         custom_report: false,
-        maximum_schedule: 5
+        maximum_schedule: 5,
+        created_at: moment.utc().format()
       },
       {
         plan_id: 1,
@@ -65,7 +66,8 @@ module.exports = {
         board_me: false,
         share_library: false,
         custom_report: false,
-        maximum_schedule: 10
+        maximum_schedule: 10,
+        created_at: moment.utc().format()
       },
       {
         plan_id: 2,
@@ -92,7 +94,8 @@ module.exports = {
         board_me: false,
         share_library: false,
         custom_report: false,
-        maximum_schedule: 20
+        maximum_schedule: 20,
+        created_at: moment.utc().format()
       },
       {
         plan_id: 3,
@@ -119,7 +122,8 @@ module.exports = {
         board_me: false,
         share_library: false,
         custom_report: false,
-        maximum_schedule: 50
+        maximum_schedule: 50,
+        created_at: moment.utc().format()
       },
       {
         plan_id: 4,
@@ -146,7 +150,8 @@ module.exports = {
         board_me: false,
         share_library: false,
         custom_report: false,
-        maximum_schedule: 80
+        maximum_schedule: 80,
+        created_at: moment.utc().format()
       },
       {
         plan_id: 5,
@@ -173,7 +178,8 @@ module.exports = {
         board_me: false,
         share_library: false,
         custom_report: false,
-        maximum_schedule: 200
+        maximum_schedule: 200,
+        created_at: moment.utc().format()
       },
       {
         plan_id: 6,
@@ -200,7 +206,8 @@ module.exports = {
         board_me: true,
         share_library: true,
         custom_report: false,
-        maximum_schedule: 300
+        maximum_schedule: 300,
+        created_at: moment.utc().format()
       },
       {
         plan_id: 7,
@@ -227,7 +234,8 @@ module.exports = {
         board_me: true,
         share_library: true,
         custom_report: true,
-        maximum_schedule: 500
+        maximum_schedule: 500,
+        created_at: moment.utc().format()
       }], {});
   },
 

@@ -139,6 +139,33 @@ services:
     restart: always
     networks:
       - scb-net
+  socioboard-adminer:
+    image: adminer
+    container_name: socioboard-adminer
+    restart: always
+    depends_on:
+      - socioboard-mysql
+    ports:
+      - 8080:8080
+    networks:
+      - scb-net
+  socioboard-mongo-express:
+    image: mongo-express
+    container_name: socioboard-mongo-express
+    restart: always
+    depends_on:
+      - socioboard-mongo
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_OPTIONS_EDITORTHEME: ambiance
+      ME_CONFIG_MONGODB_SERVER: socioboard-mongo
+      ME_CONFIG_MONGODB_ENABLE_ADMIN: false
+      ME_CONFIG_MONGODB_AUTH_DATABASE: ${MONGO_DB_NAME}
+      ME_CONFIG_MONGODB_AUTH_USERNAME: ${MONGO_USER}
+      ME_CONFIG_MONGODB_AUTH_PASSWORD: ${MONGO_PASS}
+    networks:
+      - scb-net
 volumes:
   scb-mongo: {}
   scb-mysql: {}
