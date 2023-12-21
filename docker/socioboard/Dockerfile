@@ -14,6 +14,7 @@ RUN apk add --no-cache --upgrade \
     jq
 WORKDIR /usr/socioboard/app
 COPY ./socioboard-api/ ./socioboard-api
+RUN npm install -g sequelize-cli
 RUN cd /usr/socioboard/app/socioboard-api/User && npm install && \
     cd ../Feeds && npm install && \
     cd ../Common && npm install && \
