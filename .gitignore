@@ -107,6 +107,8 @@ docker/init-mongo.js
 docker-dev-build.sh
 docker/nginx/ssl/cert.pem
 docker/nginx/ssl/key.pem
+docker/nginx/ssl/mydomain.example*
+docker/nginx/ssl/*.ext
 
 # Ansible development files
 ansible/inventory.yml
